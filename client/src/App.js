@@ -2,7 +2,7 @@ import './App.css';
 import { useState, useEffect, useRef, useCallback } from "react";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://chat-app-backend-cmgk.onrender.com");
 const ADMIN_PASSWORD = "admin123";
 
 function MessageBubble({ m, currentUser }) {
